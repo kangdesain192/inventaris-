@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventaris Perangkat Jaringan - Raka Wida Oktafianto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Inventaris Perangkat Jaringan</h1>
+    <p>Komputer, Router, Switch, dan Access Point</p>
+    <p class="identitas">Dibuat oleh: <strong>Raka Wida Oktafianto</strong> | Kelas XII TKJ 1</p>
+  </header>
+
+  <main>
+    <!-- 1. Dashboard -->
+    <section class="dashboard">
+      <div class="card"><span id="total">0</span><small>Total Perangkat</small></div>
+      <div class="card baik"><span id="baik">0</span><small>Kondisi Baik</small></div>
+      <div class="card rusak"><span id="rusak">0</span><small>Kondisi Rusak</small></div>
+      <div class="card"><span id="persen">0%</span><small>Persentase Baik</small></div>
+    </section>
+
+    <!-- 2. Form tambah / edit -->
+    <section class="panel">
+      <h2 id="judul-form">Tambah Perangkat</h2>
+      <form id="form-perangkat">
+        <input type="text" id="nama" placeholder="Nama perangkat" required>
+        <select id="kategori" required>
+          <option value="">-- Kategori --</option>
+          <option>Komputer</option>
+          <option>Router</option>
+          <option>Switch</option>
+          <option>Access Point</option>
+        </select>
+        <input type="text" id="lokasi" placeholder="Lokasi" required>
+        <select id="kondisi">
+          <option>Baik</option>
+          <option>Rusak</option>
+        </select>
+        <button type="submit" id="btn-simpan">Simpan</button>
+        <button type="button" id="btn-batal" hidden>Batal</button>
+      </form>
+      <p id="pesan"></p>
+    </section>
+
+    <!-- 3. Cari & filter -->
+    <section class="panel">
+      <h2>Daftar Perangkat</h2>
+      <div class="filter">
+        <input type="text" id="cari" placeholder="Cari nama / kategori...">
+        <select id="filter-kategori">
+          <option value="">Semua Kategori</option>
+          <option>Komputer</option>
+          <option>Router</option>
+          <option>Switch</option>
+          <option>Access Point</option>
+        </select>
+        <select id="filter-kondisi">
+          <option value="">Semua Kondisi</option>
+          <option>Baik</option>
+          <option>Rusak</option>
+        </select>
+        <button type="button" id="btn-reset">Reset Data Awal</button>
+        <button type="button" id="btn-hapus-semua">Hapus Semua</button>
+      </div>
+
+      <div class="tabel-wrap">
+        <table>
+          <thead>
+            <tr><th>No</th><th>Nama</th><th>Kategori</th><th>Lokasi</th><th>Kondisi</th><th>Aksi</th></tr>
+          </thead>
+          <tbody id="tabel-body"></tbody>
+        </table>
+      </div>
+      <p id="kosong" hidden>Data tidak ditemukan.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Raka Wida Oktafianto - Kelas XII TKJ 1</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

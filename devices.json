@@ -1,0 +1,10 @@
+[
+  { "id": 1, "nama": "PC Lab 01", "kategori": "Komputer", "lokasi": "Lab Komputer 1", "kondisi": "Baik" },
+  { "id": 2, "nama": "PC Lab 02", "kategori": "Komputer", "lokasi": "Lab Komputer 1", "kondisi": "Rusak" },
+  { "id": 3, "nama": "Router MikroTik RB941", "kategori": "Router", "lokasi": "Ruang Server", "kondisi": "Baik" },
+  { "id": 4, "nama": "Router TP-Link ER605", "kategori": "Router", "lokasi": "Ruang TU", "kondisi": "Rusak" },
+  { "id": 5, "nama": "Switch Cisco 2960", "kategori": "Switch", "lokasi": "Ruang Server", "kondisi": "Baik" },
+  { "id": 6, "nama": "Switch D-Link 24 Port", "kategori": "Switch", "lokasi": "Lab Jaringan", "kondisi": "Baik" },
+  { "id": 7, "nama": "AP Ubiquiti UniFi", "kategori": "Access Point", "lokasi": "Perpustakaan", "kondisi": "Baik" },
+  { "id": 8, "nama": "AP TP-Link EAP225", "kategori": "Access Point", "lokasi": "Aula", "kondisi": "Rusak" }
+]

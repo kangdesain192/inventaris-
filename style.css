@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f1f5f9; color: #1e293b; }
+header { background: #1e40af; color: #fff; padding: 20px; text-align: center; }
+header h1 { margin: 0 0 4px; font-size: 1.5rem; }
+header p { margin: 0; opacity: .85; }
+.identitas { margin-top: 8px !important; font-size: .9rem; background: rgba(255,255,255,.15); display: inline-block; padding: 4px 14px; border-radius: 20px; }
+footer { text-align: center; padding: 16px; color: #64748b; font-size: .85rem; }
+main { max-width: 960px; margin: 0 auto; padding: 16px; }
+
+.dashboard { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.card { background: #fff; padding: 16px; border-radius: 10px; text-align: center; border-top: 4px solid #1e40af; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+.card span { display: block; font-size: 2rem; font-weight: bold; }
+.card small { color: #64748b; }
+.card.baik { border-color: #16a34a; }
+.card.rusak { border-color: #dc2626; }
+
+.panel { background: #fff; padding: 16px; border-radius: 10px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+.panel h2 { margin-top: 0; font-size: 1.15rem; }
+
+form, .filter { display: flex; flex-wrap: wrap; gap: 8px; }
+input, select, button { padding: 9px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: .95rem; }
+input[type=text] { flex: 1; min-width: 150px; }
+button { background: #1e40af; color: #fff; border: none; cursor: pointer; }
+button:hover { opacity: .9; }
+#btn-batal, #btn-reset { background: #64748b; }
+#btn-hapus-semua { background: #dc2626; }
+#pesan { margin: 8px 0 0; font-size: .9rem; color: #dc2626; }
+#pesan.ok { color: #16a34a; }
+
+.tabel-wrap { overflow-x: auto; margin-top: 12px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px; text-align: left; border-bottom: 1px solid #e2e8f0; white-space: nowrap; }
+th { background: #f8fafc; }
+.badge { padding: 3px 10px; border-radius: 12px; font-size: .8rem; color: #fff; }
+.badge.Baik { background: #16a34a; }
+.badge.Rusak { background: #dc2626; }
+.btn-edit { background: #f59e0b; padding: 5px 10px; }
+.btn-hapus { background: #dc2626; padding: 5px 10px; }
+#kosong { text-align: center; color: #64748b; }
